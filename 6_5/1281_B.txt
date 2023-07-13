@@ -1,0 +1,16 @@
+Tóm tắt đề:
+cho xâu s và c
+chỉ được phép swap 2 kí tự trong s sao cho s < c
+xác định xem liệu có thể hay không, in ra màn hình --- nếu 
+không thể và in ra xâu sau khi swap nếu có thể
+-Solve(I read editorial T-T)
++ xâu s nhỏ nhất mà ta có thể tạo ra nếu chỉ đổi chỗ hai vị 
+trí i và j là gì
++ ta sort xâu s và tìm xem vị trí phần tử đầu tiên không
+đúng chỗ
++ aa_c_dceabza
+
+aa_a_dcecbza
+aa_a_dceabzc
+
+aaaabccdez

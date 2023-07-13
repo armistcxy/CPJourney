@@ -1,0 +1,13 @@
+tóm tắt đề bài: 
+Cho một cây không root, một leaf là một đỉnh nối với nhiều nhất một đỉnh khác
+Trong một thao tác có thể xóa hết tất cả các leaf hiện tại
+Hỏi sau k lần thực hiện thì số đỉnh còn lại là bao nhiêu 
+solve:
+- ta hình dung bài này như một sự truyền nhiễm, hoặc cũng có thể là bfs trong topo sort
+- đầu tiên ta có hàng đợi current_leaves để lưu các lá hiện tại, và mảng times lưu thời điểm mà 
+đỉnh đó sẽ bị xóa
+- ban đầu ta add các đỉnh hiện tại là lá vào hàng đợi current_leaves và đánh dấu times của 
+các đỉnh này là 1
+- sau đó ta thực hiện bfs, nếu bậc của các đỉnh sau khi bị trừ còn lại 1 thì sẽ add vào 
+current_leaves
+- sau khi thực hiện xong nếu times của đỉnh nào > k thì đỉnh đó sẽ sống sót sau k lần xóa

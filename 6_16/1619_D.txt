@@ -1,0 +1,12 @@
+có n người bạn, với mỗi người anh ấy muốn mua một món quà dành tặng họ
+m shop, nếu người j nhận được món quà từ shop i thì sẽ có niềm vui là pij 
+vlad chỉ có time để đến n - 1 shop.
+tìm max của min joy mà vlad có thể tạo ra 
+
+solve:
+-nếu x thỏa mãn thì x - 1 cũng thỏa mãn nhưng chưa chắc x + 1 thỏa mãn => binary search
+-với hàm check ta kiểm tra xem có cửa hàng nào chứa 2 thằng >= x không và kiểm tra xem với 
+mỗi người bạn từ 1 -> n có ai không có quà >= x không là ok
+-vì sao lại chỉ cần 1 cửa hàng chứa 2 quà >= x
+có n - 1 cái lồng chim bồ câu, nếu muốn có quà cho cả n người thì ít nhất tồn tại 1 lồng có 2 quà
+

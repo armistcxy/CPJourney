@@ -1,0 +1,8 @@
+tóm tắt"
+cho a1,a2,...,an. đếm số cặp (i,j,k,l) sao cho
+1 <= i < j < k < l <= n
+ai = ak and aj = al
+-solve:
+cố định j, duyệt j từ phải sang trái, đếm số cặp (i,j) thỏa mãn yêu cầu đề bài
+dùng một mảng phụ là cnt để đếm, sau mỗi vòng duyệt thì ta thêm vào các cặp (k,l)
+cnt[a[j]*n+a[k]]++ (a[j] lúc này coi là a[l])

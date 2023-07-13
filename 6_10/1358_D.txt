@@ -1,0 +1,6 @@
+tóm tắt:
+kì nghỉ diễn ra trong x ngày liên tiếp dành để thăm gái
+có n tháng trong năm, tháng i có di ngày.
+số cái ôm nhận được trong ngày thứ i là i 
+in ra số hug nhận được nhiều nhất có thể
+Solve:

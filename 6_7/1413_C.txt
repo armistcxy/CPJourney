@@ -1,0 +1,17 @@
+tóm tắt:
+đàn guitar có 6 dây
+fret thứ j ở dây i tạo ra nốt ai + j
+độ dễ được biểu hiện bởi hiệu của fret lớn nhất và fret nhỏ nhất được dùng.
+Tìm hiệu nhỏ nhất có thể
+solve:
+đầu tiên ta gọi nốt ta đang xét hiện tại là x
+ta sẽ lưu hết các giá trị hiệu giữa x và ai
+ta sẽ thu được một mảng 2 chiều như sau
+(quy ước a1 > a2 > ... > a6)
+b1-a1 b1-a2 b1-a3 ... b1-a6
+b2-a1 b2-a2 b2-a3 ... b2-a6
+.....
+bn-a1 bn-a2 bn-a3 ... bn-a6
+ta sẽ lần lượt giảm khoảng cách giữa bé nhất và lớn nhất 
+bằng cách duy trì một set 
+khó ở chỗ implement

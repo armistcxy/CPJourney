@@ -1,0 +1,20 @@
+cho một cây có gốc 1 
+m truy vấn 
+mỗi truy vấn gồm k giá trị v1,v2...,vk. xác định xem có tồn tại một đỉnh u nào đó
+sao cho trên đường từ đỉnh 1 đến u thì 1 trong 2 điều sau đây xảy ra:
+1. vi thuộc path đó
+2. vi kề một đỉnh thuộc path 
+
+solve:
+ta có vài nhận xét:
++ nếu u thuộc path thì cha của u cũng thuộc path
++ nếu u cách kề một đỉnh thuộc path thì cha của u thuộc path
+vậy ta chỉ cần xét các đỉnh là cha của đỉnh trong tập v
+các đỉnh này sẽ tạo ra một chuỗi trên đường đi
+nhận xét:
++ ta cần sort các đỉnh theo độ sâu của nó
++ đỉnh i + 1 thuộc [in[vi],out[vi]) trong euler tour
+
+vậy ta chỉ cần làm theo các bước này thì sẽ xác định được 
+
+độ phức tạp O(nlogn)

@@ -1,0 +1,18 @@
+tóm tắt đề bài:
+có hai cái thanh ngang độ dài k, đặt khéo nhất sao cho nó rơi xuống dính nhiều point nhất có thể 
+có n point với tọa độ xi và yi, mỗi thanh được đặc trưng bởi (x,y) và (x+k,y)
+Tìm số điểm có thể ăn nhiều nhất ? 
+solve:
++ đầu tiên thì ta nhận thấy chỉ nên quan tâm đến x, y thì để là INF là ok
++ tiếp theo mình nghĩ về giải bài toán tổng lớn nhất, tìm max tổng đoạn [l,l+k-1], sau khi tìm xong tổng
+này ta tìm tổng tiếp theo lớn nhất
++ hoặc ta tìm đoạn có độ dài 2k có tổng lớn nhất
+
+bài này mình đã đọc giải
+về vế đầu tiên mình đã đúng, bài toán này không hề phụ thuộc vào y
+ở đây mình thấy lời giải rất đẹp bằng cách sử dụng qhđ
+đầu tiên ta có 2 mảng là ml và mr, với ml là số phần tử về bên trái của phần tử i mà khoảng cách 
+giữa phần tử i và các phần tử đó không quá k, tương tự với r
+ở đây ta cập nhật tại mỗi điểm xem đoạn dài nhất trước đó là gì
+cách tối ưu nhất là chọn 2 thằng không giao nhau nên ta lấy ans = max(ml[i] + mr[i+1])
+bài này hay ở chỗ dùng qhđ ****** đáng xem

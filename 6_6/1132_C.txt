@@ -1,0 +1,5 @@
+tóm tắt:
+tô màu cho hàng rào gồm n section, thuê q người để tô màu,
+người thứ i sẽ sơn đoạn [l_i,r_i]
+ít tiền nên chỉ thuê được q - 2 người, tìm max số section được sơn
+solve:

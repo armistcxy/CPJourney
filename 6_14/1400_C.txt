@@ -1,0 +1,12 @@
+tóm tắt:
+cho xâu nhị phân w có độ dài n và số nguyên x
+xây một xâu s có độ dài n từ w bằng cách:
+nếu tồn tại w[i-x] = 1 hoặc w[i+x] thì s[i] = 1, nếu không 
+thì s[i] = 0
+cho s tìm w
+solve:
+not a hard problem, we just need to construct by the zero in s
+this mean w[i+x] = 0 and w[i-x] = 0 must happen if s[i] = 0;
+all others one w[i] = 1
+and then we construct the s again by the w we've just builded
+then if build(w) = s then we ouput w, otherwise we output -1

@@ -1,0 +1,8 @@
+tóm tắt:
+cho xâu s và t(len(t)=2) ta có thể biến s[i] thành bất kì kí tự nào từ a đến z
+Cho số lần biến hóa tối đa là k lần. Tìm số subsequence = t nhiều nhất có thể 
+solve:
+it just dp state consider three case
++ change s[i]
++ change s[i] into t[0]
++ change s[i] into t[1]

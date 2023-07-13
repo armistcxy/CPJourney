@@ -1,0 +1,19 @@
+tóm tắt đề bài: 
+- số good nếu nó là bội của d
+- số beautiful nếu nó good và không thể biểu diễn bằng tích của 2 số good
+Cho một số good x, xác định xem x có thể được biểu diễn bằng ít nhất 2 cách như là
+tích của một vài số beautiful
+solve: 
+số beautiful sẽ có dạng là k * d với gcd(k,d) = 1
+số beautiful không thể chia hết cho d ^ 2
+
++ ta sẽ phân tích x xem số t lớn nhất sao cho x chia hết cho d ^ t là bao nhiêu
++ TH1: nếu d = p ^ e 
+phân tích thừa số nguyên tố trong x, số lần xuất hiện của p trong x là m lần
+số beautiful nếu nó có tối đa (2e-1) lần số p xuất hiện
+
++ TH2: nếu d chia hết cho một số nguyên khác nữa 
+nếu d chia hết cho một số nguyên khác thì d có dạng p ^ e * p1 * p2 ... pn
+phân tích thừa số nguyên tố cho x, trong x số p xuất hiện m lần
+=> ta luôn tìm được cách để quy m = e * n + r (r = m % e) rồi sau đó phân bố 
+p1 * p2 * ... pn vào hết một thằng là xong

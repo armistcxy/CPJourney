@@ -1,0 +1,15 @@
+tóm tắt đề:
+mua chính xác k món đồ bằng cách chỉ trả món đồ đắt nhất trong
+số đó
+lưu ý chỉ được dùng cách này 1 lần, những lần khác trả như
+thường
+tìm số hàng có thể mua được nhiều nhất
+solve:
+a1 a2 a3 .... an (after sort)
+
+sử dụng prefix sum và dp
+nếu ta chọn i cố định thì ta sẽ mua k - 1 vật phẩm ở trước i
+đi kèm 
+dp[i] = a[i] + pref[i-1];
+if (i >= k) dp[i] = min(dp[i],dp[i-k] + a[i])
+

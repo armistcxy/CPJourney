@@ -1,0 +1,10 @@
+tóm tắt:
+Cho cây n đỉnh
+tìm số cạnh tối đa có thể bị loại bỏ sao cho những connected components còn lại có size chẵn
+solve:
+đầu tiên ta nhận thấy rằng nếu có một components size chẵn >= 4 thì nó có thể gãy ra thành 
+các components nhỏ với size 2
+- insight two is if the number of vertices is odd then we can't do anything
+- insight three is if the size of subtree of v is even and v != 1 then we can delete the edge
+from pa[v] to v
+- so we just need dfs to calculate size of subtree

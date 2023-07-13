@@ -1,0 +1,12 @@
+tóm tắt đề bài:
+cho la,ra,ta,lb,rb,tb. Ngày may mắn là ngày [la + k * ta, ra + k * ta] và 
+tương tự với lb,rb,tb. Tìm số ngày may mắn liên tiếp trùng nhau nhiều nhất
+- solve:
+ta cần tối thiểu khoảng cách giữa 2 thằng la và lb
+dis = lb - la + m * tb - n * ta
+ta luôn muốn dis = 0
+giải trường hợp này ta được lb - la = n * ta - m * tb
+=> lb - la chia hết cho g với g = gcd(ta, tb)
+=> ta đặt d = (lb - la) / g
+vậy giờ ta có 3 trường hợp là d, d-1, d+1 (tại vì không phải lúc nào dis cũng có thể bằng 0)
+xét 3 trường hợp trên và lấy min ta giải được bài toán

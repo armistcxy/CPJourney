@@ -1,0 +1,11 @@
+tóm tắt đề bài:
+n con chuột túi, mỗi con chuột túi có size si, một con chuột túi có thể 
+chui vào con chuột túi khác nếu size của con lớn >= 2 lần con bé
+mỗi con chuột túi chứa tối đa 1 con, không thể lồng nhiều con vào một lúc
+2 con khi nhìn sẽ như là 1 con
+Tìm số con được nhìn thấy ít nhất có thể
+- cách giải:
+sort theo thứ tự size
+ở đây ta giải bài toán tương đương: tìm số con được giấu nhiều nhất có thể
+=> ta dùng tìm kiếm nhị phân để tìm số lượng này, gọi lượng này là x
+thì ta sẽ để cho con lớn nhất chứa con thứ x, con lớn thứ 2 chứa con x - 1, ...

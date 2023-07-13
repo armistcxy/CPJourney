@@ -1,0 +1,9 @@
+tóm tắt:
+2 dãy an và bm
+với mỗi i (1 <= i <= n) chọn j (1 <= j <= m) và ci =  ai & bj
+tìm min c1 | c2 | c3 | c4 ... |cn
+
+solve: 
+- muốn bit thứ i tắt ở kết quả thì bit thứ i ở tất cả c cũng phải tắt
+- tắt ở bit thứ i tốt hơn là tắt ở bit thứ i - 1 (greedy strategy)
+bruh bruteforce

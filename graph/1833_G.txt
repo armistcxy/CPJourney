@@ -1,0 +1,4 @@
+tóm tắt (brief): branch is a tree of 3 vertices
+choose edges to cut so that each vertex belong to only one branch
+solve:
+just cut the edge connect u and fa whenever size[u] = 3

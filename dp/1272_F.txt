@@ -1,0 +1,4 @@
+tóm tắt:
+cho 2 xâu ngoặc s và t, tạo một xâu ngoặc đúng X ngắn nhất sao cho s và t 
+là xâu con của X (không nhất thiết phải liên tiếp)
+giải

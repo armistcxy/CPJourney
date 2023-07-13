@@ -1,0 +1,10 @@
+tóm tắt đề bài:
+đếm số array thỏa mãn:
++ chứa n phần tử 
++ mỗi phần tử là một số trong đoạn [1,m]
++ trong mỗi array có duy nhất 1 cặp phần tử bằng nhau
++ tồn tại một index i sao cho aj < a(j+1) với mọi j < i và aj > aj+1 với mọi j > i
+-solve:
+đầu tiên ta nhận thấy có n - 1 phần tử riêng biệt trong dãy 
+=> Chọn n - 1 số từ  m có C(n-1,m) cách
+Chọn 1 số giống 1 trong n - 2 số (không được chọn giống max nên có n - 2)

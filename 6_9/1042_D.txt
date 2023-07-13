@@ -1,0 +1,9 @@
+tóm tắt đề bài:
+đếm số cặp (l,r) sao cho al + a(l+1) + ... + ar < t 
+solve:
+xây dựng prefix sum gọi là mảng pref
+ta cần tìm các cặp l,r sao cho pref(r) - pref(l-1) < t
+=> pref(r) < pref(l - 1) + t (r chạy từ l -> n)
+ta duyệt l từ n về 1
+sử dụng BIT để đếm tổng các số <= pref(l - 1) + t - 1
+mỗi lần trước khi chạy ta sẽ add vị trí pref(l) thêm 1

@@ -1,0 +1,2 @@
+tóm tắt: 
+cho xâu s và t, đảo vị trí xâu s sao cho t xuất hiện nhiều nhất trong s

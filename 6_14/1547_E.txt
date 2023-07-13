@@ -1,0 +1,8 @@
+tóm tắt:
+cho n ô và k cái điều hòa, điều hòa i đặt ở ô ai và có nhiệt độ là ti
+với mỗi ô nhiệt độ được tính bởi min(1 <= j <= k) (tj + |aj - i|)
+tìm nhiệt độ của mỗi ô
+solve:
+ta chỉ cần tìm nhiệt độ nhỏ nhất của bên trái và bên phải
+mỗi khi dịch sang 1 thì p = min(p+1,c[i])
+với c[i] là nhiệt độ điều hòa ở ô thứ i

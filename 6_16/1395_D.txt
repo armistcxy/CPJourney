@@ -1,0 +1,21 @@
+tóm tắt đề bài:
+Du chat trong nhóm n ngày:
+nếu Du có thể nói thì anh ấy sẽ biến Bobo thành trò cười với nhân tố cười ai. Nhưng sau đó có thể
+bị mute tùy vào trạng thái của Bobo
+nếu đang bị mute thì thôi 
+Bobo mood là một hằng số m
+vào ngày thứ i: nếu du có thể nói và ai > m thì bobo sẽ mute du trong d ngày tức là du không thể nói
+trong các ngày i + 1, i + 2, ... min(i + d, n)
+
+tìm max fun factor trong tất cả permutation của a
+
+
+solve: 
+train of thougts: 
+đầu tiên ta nhận thấy sẽ luôn là tối ưu nếu nói max vào ngày cuối
+ta sort: a1 < a2 < ... < an
+need hint
+ta chia ra làm 2 set, một tập hợp big gồm các ai > x và small gồm các phần tử còn lại
+sau đó xây prefix sum cho 2 set
+sau đó ta duyệt theo số phần tử của big, số ngày còn lại mà ta cần là left = n - (i - 1) * d - 1
+với i là số phần tử của mảng big được chọn 

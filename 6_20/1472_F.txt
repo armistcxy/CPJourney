@@ -1,0 +1,5 @@
+tóm tắt đề bài:
+cho một thanh 2 * n
+fill những ô còn trống mà không bị overlap bằng các viên 1x2 và 2x1
+xác định xem có thể fill được không
+solve:

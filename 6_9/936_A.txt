@@ -1,0 +1,15 @@
+tóm tắt:
+Bếp tự động tắt sau k phút, julia sẽ kiểm tra sau mỗi d phút
+nếu bếp đang bật thì không làm gì, nếu bếp tắt thì bật lên
+(lưu ý bếp chỉ tự động tắt sau k phút khi bật chứ không phải cứ k phút trôi qua sẽ tắt)
+solve:
+sử dụng tìm kiếm nhị phân:
+có 2 trường hợp:
+- TH1: k <= d, rõ ràng là bếp sẽ luôn trong trạng thái tắt khi julia quay lại
+=> thời gian bếp bật trong khoảng thời gian x là x / d * k , khoảng thời gian còn lại là
+x - x / d * d thì khoảng thời gian này có thể lớn hơn k hoặc nhỏ hơn k
+do vậy ta khoảng thời gian bật trong lúc còn lại <= k
+và nên nhớ lúc tắt thì đồ ăn vẫn được hâm nóng một lượng 0.5
+- TH2: k > d, lúc này ta sẽ tìm quãng thời gian bếp tắt, đó sẽ là ceil(k/d) * d - k
+vậy ta sẽ tìm có bao nhiêu lần như vậy để trừ đi 
+sau đó với quãng thời gian còn lại, ta xác định xem nó nhỏ hơn k hay lớn hơn k để xử lý

@@ -1,0 +1,13 @@
+tóm tắt:
+muốn bật n cái máy tính
+nếu bật cái i và cái i + 2 rồi thì cái i + 1 tự động bật
+có bao nhiêu thứ tự bật hết tất cả các máy
+giải:
+gọi dp[i][j] là số cách để fill i chỗ với j continugous segments
+ta có 5 trạng thái chuyển đổi
+trạng thái 1: i,j -> i + 1, j + 1 thì sẽ nhân thêm với j + 1    - - + + - - - => - - + + - - +
+trạng thái 2: i,j -> i + 1, j thì sẽ nhân thêm với 2 * j  - - + + - - - => - - + + + - -
+trạng thái 3: i,j -> i + 1, j + 1 thì sẽ nhân thêm với 2 * j - - + + - - - => - - + + + + -
+nếu có từ 2 seg trở lên (j >= 2)
+trạng thái 4: i,j -> i + 2, j - 1 thì sẽ nhân thêm với 2 * (j - 1)  - - + + - - + + => - - + + + + + +
+trạng thái 5: i,j -> i + 3, j - 1 thì sẽ nhân thêm với (j - 1)  - - + + - - - + + => - - + + + + + + + 

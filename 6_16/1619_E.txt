@@ -1,0 +1,17 @@
+tóm tắt:
+dãy a gồm n phần tử không âm (0 <= ai <= n)
+trong một bước chọn một index j và tăng aj lên 1. với mỗi i từ 0 -> n tìm số operation nhỏ nhất
+để làm cho mex của a = i. nếu không thể thì in ra -1
+
+solve:
+muốn mex = i thì dãy phải có distribution là 0,1...,i-1,..... 
+vậy tức là các phần tử đang bằng i thì phải tăng lên 1
+các vị trí còn trống cần phải lấp đầy (ít nhất phải có i phần tử nhỏ hơn i trong dãy)
+xét từ 0->i, nếu vị trí nào có 1 thằng thì ok rồi
+vị trí nào có x + 1 thằng thỏa mãn thì lưu lại vị trí đó (x phần tử thừa)
+vậy mỗi lần thiếu vị trí nào (đặt là v) thì ta sẽ lôi đoạn gần nhất bị thừa ra (gọi là t)
+để bù vào với cost là  v - t
+vì mỗi bước ta chỉ quan tâm đến phần tử trước nó thôi, tại vì các trạng thái trước đó nữa đã được xác
+định hết rồi
+nếu một vị trí = -1 thì tất cả các thằng đằng sau nó cũng = -1
+O(n)

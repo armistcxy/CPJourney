@@ -1,0 +1,10 @@
+tóm tắt đề bài:
+Có n người khách, người khách thứ i muốn có ít nhất li ghế trống về phía bên trái và ri 
+ghế trống bên phải
+sovle:
+đầu tiên có một điều chắc chắn là sẽ luôn có ghế cho mọi người (tức là buộc phải có n ghế)
+giờ ta xử lý các ghế trống
+ta luôn thấy lí tưởng nhất là xếp người có l cao cạnh người có r cao, lúc đó sẽ tận dụng được lợi thế đó nhiều
+nhất có thể 
+vậy ta chỉ cần sort 2 mảng l và r
+số ghế thêm vào sẽ là max(l[i],r[i]) để tận dụng ghế trống.

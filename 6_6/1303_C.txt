@@ -1,0 +1,6 @@
+tóm tắt đề bài:
+bàn phím gồm 1 hàng 26 kí tự
+cho xâu s, s[i] và s[i+1] phải là 2 kí tự liền nhau trên bàn phím
+xác định xem liệu có bàn phím nào như thế không?
+
+solve:

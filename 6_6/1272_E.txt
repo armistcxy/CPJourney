@@ -1,0 +1,5 @@
+tóm tắt:
+dãy a gồm n phần tử , có thể nhảy từ vị trí i tới i - ai hoặc i + ai
+với mỗi i từ 1 đến n xác định số bước nhỏ nhất để nhảy từ i đến j bất kì sao cho
+ai khác tính chẵn lẻ với aj 
+solve:

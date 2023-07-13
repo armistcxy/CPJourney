@@ -1,0 +1,7 @@
+tóm tắt:
+bạn mang được p unit và đệ mang được f unit
+có cnt_s kiếm và cnt_w rìu
+mỗi cây kiếm nặng s unit và mỗi cây rìu nặng w.
+mang được tối đa bao nhiêu vũ khí?
+solve:
+O(n), ta chỉ cần duyệt số cây kiếm rồi từ đó tìm được cái đại lượng còn lại

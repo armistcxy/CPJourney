@@ -1,0 +1,11 @@
+Tóm tắt:
+Có n problems với problem i có topic là ai và có độ khó là bi
+Không có 2 problem cùng độ khó và cùng topic (*)
+Chọn 3 problem trong n problem phải thỏa mãn ít nhất 1 trong 2 điều kiện:
+- 3 problem đều có topic khác nhau
+- 3 problem đều có độ khó khác nhau
+Solve:
+ta đi tìm số cách chọn problem sao cho không thỏa mãn yêu cầu đề bài
+bộ 3 problem đi tìm có dạng [(a,b),(a,c),(d,b)] do đề bài (*)
+vậy ta chỉ cần cố định (a,b) và đếm số cặp problem thỏa có a và có b
+rồi lấy kết quả trừ đi (cnt1(a) - 1) * (cnt2(b) - 1)

@@ -1,0 +1,11 @@
+tóm tắt:
+cho n,m,a,b tạo một matrix size n * m: 
+mỗi hàng của matrix có chính xác a số 1 
+mỗi cột của matrix có chính xác b số 1 
+tất cả các phần tử khác là 0
+solve:
+đầu tiên phải thỏa mãn điều kiện n * a = m * b (tổng số số 1 của các hàng phải bằng tổng số số 1 
+của các cột)
+- ta sắp xếp theo trật tự hàng 1 từ 1 đến a toàn các số 1
+hàng 2 từ a + 1 -> 2a , tương tự ... (nhớ mod m)
+sau khi xếp kiểu này thì chắc chắn mỗi cột có n * m / a số 1 và chính bằng b 

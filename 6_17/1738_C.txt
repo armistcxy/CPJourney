@@ -1,0 +1,6 @@
+tóm tắt: alice và bob chơi một trò chơi trên dãy an, alice đi đầu
+mỗi lượt chọn một số nguyên và loại ra khỏi dãy. trò chơi kết thúc khi không còn số nguyên nào cả
+Alice win nếu tổng các số cô chọn là chẵn.
+determine who win
+solve:
+i read editorial

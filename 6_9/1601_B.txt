@@ -1,0 +1,7 @@
+tóm tắt:
+- ếch bị rơi xuống giếng sâu n mét, tại vị trí sâu x so với mặt đất, nó có thể nhảy được từ 0 
+đến ax mét
+- sau khi nhảy đến độ sâu x so với mặt đất thì ếch trượt một khoảng bx xuống trong lúc nghỉ
+Tìm số bước nhảy ít nhất mà nó phải nhảy để chạm đến mặt đất
+solve:
+một bước nhảy từ i có dạng i - x + bx (0 <= x <= ai)

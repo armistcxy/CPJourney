@@ -1,0 +1,11 @@
+tóm tắt: 
+cho dãy a có n phần tử, một thao tác có thể làm giảm ai đi 2 và giảm a_(i+1) và a_(i-1) đi 1
+tìm số thao tác ít nhất để có thể làm dãy a có ít nhất 2 phần tử <= 0
+solve: 
+ta xét các trường hợp sau:
+trường hợp 1: 2 phần tử nhỏ nhất quá xa nhau: ta có 1 ứng viên là ans = ceil(a[i]/2) + ceil(a[j]/2)
+trường hợp 2: ta xét 2 phần tử kề nhau, có 2 trường hợp xảy ra
+		1. a[i] / 2 > a[j] ví dụ 7 : 2 thì sẽ tốn ceil(a[i]/2) bước
+		2. a[i] / 2 <= a[j] ví dụ 7 4 thì ta sẽ tốn ceil((a[i] + a[j])/3)
+trường hợp 3: 2 phần tử nhỏ nhất cách nhau 1 ô ở giữa ví dụ 1 8 1 thì ta phải giảm ô ở 8 đi và 2 phần 
+tử bên cạnh sẽ giảm đi 1, lúc này ta giảm đi 1 bước

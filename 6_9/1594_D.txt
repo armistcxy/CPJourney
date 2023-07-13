@@ -1,0 +1,16 @@
+tóm tắt đề bài:
+amongus
+người thứ i nói người thứ j là c 
+người thứ i nói dối nếu anh ấy là impostor
+người thứ i nói thật nếu anh ấy là crewmate
+xác định xem số impostor tối đa là bao nhiêu
+-solve:
+ta sử dụng node ảo cho bài tập này
+đầu tiên cần chú ý 1 điều rằng
+nếu i nói j là impostor thì i với j khác team nhau
+nếu i nói j là crewmate thì i với j cùng team nhau
+giờ ta sử dụng đồ thị 2 màu để giải 
+nếu i và j cùng team thì nối chúng với cùng 1 node ảo
+nếu i và j khác team thì nối trực tiếp với nhau 
+sử dụng dfs để tô màu, sau mỗi lần tô màu ta cộng max thành viên của 2 team vào 
+kết quả

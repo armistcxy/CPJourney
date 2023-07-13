@@ -1,0 +1,10 @@
+tóm tắt:
+cho trước một đồ thị, có vài cạnh không có hướng và có cạnh có hướng
+xác định xem có cách nào đặt hướng cho các cạnh chưa có hướng để cho đồ thị không có cycle 
+không ?
+solve:
+đầu tiên nếu chỉ sử dụng các cạnh có hướng mà đã có chu trình thì câu trả lời sẽ là không
+ngược lại nếu không tồn tại chu trình khi sử dụng các cạnh này thì câu trả lời sẽ luôn là có
+ta sử dụng toposort để tìm xem có chu trình hay không
+và cũng dùng toposort để đặt hướng cho các cạnh luôn
+lưu ý đồ thị có chu trình khi có 1 đỉnh aj nối đỉnh ai (i < j trong thứ tự topo) 

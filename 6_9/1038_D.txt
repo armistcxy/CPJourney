@@ -1,0 +1,13 @@
+tóm tắt:
+slime có thể ăn 2 con bên bên cạnh
+sau khi ăn thì từ x chuyển thành x - y
+Tìm giá trị lớn nhất có thể của slime đó
+solve:
+bài này là một trong những bài phải vét hết tất cả trường hợp, có 3 trường hợp xảy ra:
+1. có cả âm có cả dương
+cách tối ưu nhất là để số âm trừ đi hết các số dương, để lại 1 số dương duy nhất và 
+sau đó lấy số dương này trừ đi số âm là thu được kết quả max
+2. chỉ có dương
+lấy số dương bé nhất trừ lần lượt các số dương khác và để lại 1 số dương duy nhất
+3. chỉ có âm
+ta lấy số âm lớn nhất trừ đi các số âm khác

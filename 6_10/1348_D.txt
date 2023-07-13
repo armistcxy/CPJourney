@@ -1,0 +1,14 @@
+Tóm tắt đề bài:
+sáng ngày 1 có một con vi khuẩn m = 1
+Mỗi ngày có thể một số con vi khuẩn (hoặc không) tách ra. khi 1 con khối lượng m
+tách ra thì sẽ tạo ra 2 con khối lượng m / 2. Ví dụ một con có m = 3 tách thành 
+2 con m = 1.5
+Mỗi đêm thì kích thước của chúng tăng lên 1
+Tìm số ngày ngắn nhất để kích thước bằng đúng n
+Solve:
+ta thấy kích thước tối đa sau mỗi ngày là 1 + 2 + ... + 2 ^ i
+tức bằng = (2 ^ (i + 1) - 1). vậy kích thước trong ngày i chạy từ 2 ^ i -> 2 ^ (i + 1) - 1
+ngày thứ i số vi khuẩn tối đa là 2 * a(i - 1)
+nếu lượng mass cần thiết <= mx thì ta coi như xong bài toán
+nếu lượng mass cần thiết < mx * 2 và > mx thì ta chỉ lấy một nửa của mass và duyệt sang ngày tiếp theo
+

@@ -1,0 +1,10 @@
+Tóm tắt đề bài:
+tìm số dãy con liên tục với độ dài >= k và ai <= q
+-ý tưởng ban đầu:
+ta duyệt tuần tự, ví dụ 5 4 3 4 5 5 2 3 2 6 thì ta lấy được 2 đoạn có độ dài 3
+là 4 3 4 và 2 3 2 (q = 4), thì giả sử k = 2 thì kết quả sẽ là 2 * 3 = 6
+giả sử đoạn có độ dài l, thì sẽ có là l đoạn độ dài 1, l - 1 đoạn độ dài 2, ... 
+l - (k - 1) đoạn độ dài k.
+vậy ta cần các đoạn có độ dài từ k -> l
+nếu l >= k thì nó sẽ góp l - (k - 1) + l - k + ... + l - (l - 1)
+tức là 1 + 2 + ... + l - k + 1 tức (l - k + 2) * (l - k + 1) / 2

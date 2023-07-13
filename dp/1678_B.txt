@@ -1,0 +1,8 @@
+tóm tắt: có một xâu nhị phân s có độ dài n (n chẵn)
+divide s thành min number of subsegment liên tiếp , các bit trong subsegment là giống nhau
+sau tất cả, s được cho là tốt nếu len của subsegment là chẵn
+ví dụ s là 11001111 divide into 11, 00 , 1111 với độ dài là 2,2,4
+muốn làm cho s tốt thì phải change value một vài vị trí trong s. tìm số bước nhỏ nhất để 
+làm s good và tìm số subsegment s có thể chia ra thành với min bước 
+solve:
+ta sử dụng tham lam đơn giản

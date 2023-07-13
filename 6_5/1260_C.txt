@@ -1,0 +1,18 @@
+- tóm tắt đề bài:
++ cho r,b,k . phải tô màu các fence sao cho vị trí chia hết cho r phải tô màu đỏ, 
+vị trí chia hết cho b phải tô màu xanh, vị trí chia hết cho cả b cả r thì tô màu nào
+là lựa chọn của ta
++ ta cần tô sao cho không có k vị trí được tô màu liên tiếp
+không cùng một màu
++ xác định xem điều đó có thể thực hiện được hay không
+- solve: 
+giả sử r < b
+đầu tiên nếu r * k < b thì rõ ràng là không thể thực hiện được
+tiếp theo ta tìm khoảng cách nhỏ nhất giữa r * x và b * y 
+khoảng cách này chính bằng với gcd(r,b)
+ví dụ r = 3 và b = 8
+3 6 8 9 12 15 16
+thì khoảng cách ngắn nhất bằng = 9 - 8 = 1 = gcd(3,8)
+vậy ta chỉ cần kiểm tra min_dis + r * (k - 1) < b hay không
+giải thích :  khoảng cách giữa 2 blue liên tiếp là b
+có k màu r thì khoảng cách là r * (k - 1)

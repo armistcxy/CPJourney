@@ -1,0 +1,13 @@
+You are given n segments on a line. There are no ends of some segments that coincide.
+For each segment find the number of segments it contains.
+
+solve:
+--  sol1: BIT 
++ sort các interval theo chiều r tăng dần
++ sau đó ta nén các interval theo l (để ý thao tác nén)
++ sau đó ta dùng BIT, sau mỗi lần duyệt ta add thêm 1 vào vị trí l
++ vì khoảng cần tìm đã thỏa mãn sẵn việc ri >= rj (với i > j) nên ta chỉ cần tìm các lj >= li
+=> bit query trong đoạn [li;m] (với m = l_max sau khi nén)
+
+-- sol2: SEGMENT TREE
+tương tự, but i hate to implement =))

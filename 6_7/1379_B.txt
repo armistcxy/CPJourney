@@ -1,0 +1,8 @@
+tóm tắt:
+cho 3 số l,r,m tìm bộ ba số a,b,c thỏa mãn 
+l <= a,b,c <= r và m = n * a + b - c
+solve:
+cố định a, ta thấy rằng m - (r - l) <= n * a <= m + (r - l)
+vậy nên ta sẽ cố định a, duyệt tuần tự a trong khoảng [l,r]
+sau đó ta sẽ tìm n = (m + (r - l) * a) check xem n * a có thỏa điều 
+kiện trên không, nếu có ta sẽ tìm được b và c dễ dàng 

@@ -1,0 +1,6 @@
+tóm tắt đề bài:
+có n ứng dụng cài sẵn trên điện thoại, ai biểu diễn loại ứng dụng đó (1 <= ai <= n)
+Chọn m là số màn hình và s là size của màn hình đó, trong mỗi màn hình thì chỉ có duy nhất 
+1 loại ứng dụng, số icon trong màn hình đó có thể là s hoặc s-1
+Tìm số màn hình nhỏ nhất có thể (min m)
+solve:
